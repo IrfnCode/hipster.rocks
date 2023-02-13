@@ -1,0 +1,193 @@
+body {
+  background-image: url("Bronya_Office.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  height: 100vh;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.title {
+  height: 500px;
+  width: 350px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(22, 99, 143);
+  background: linear-gradient(
+    0deg,
+    rgba(22, 99, 143, 0.699) 0%,
+    rgba(21, 68, 105, 0.699) 20%,
+    rgba(21, 54, 87, 0.699) 42%,
+    rgba(21, 44, 75, 0.699) 69%
+  );
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  color: #ffffff;
+  padding-top: 0px;
+  font-size: 30px;
+  color: #fff;
+  font-style: italic;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Tahoma;
+}
+.stuff {
+  position: absolute;
+  bottom: 10px;
+}
+.song {
+  background: #c1c1c1;
+  color: white;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.logo {
+  width: 200px;
+  position: relative;
+}
+.login {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 90px 0 0 0;
+}
+.login .logo {
+  display: block;
+  border-radius: 10px;
+  margin: 0 auto 30px;
+}
+.login a,
+.login a:visited {
+  text-decoration: underline;
+  color: inherit;
+}
+ul.notice {
+  margin: 30px auto;
+  width: 200px;
+  text-align: center;
+  list-style-position: inside;
+  font-size: 15px;
+  padding: 20px 30px;
+  border-radius: 3px;
+}
+ul.notice.errors {
+  background-color: #fff4f4;
+  border: 1px solid #f50909;
+  color: #f50909;
+}
+ul.notice.success {
+  background-color: #d7eacd;
+  border: 1px solid #6fae4f;
+  color: #6fae4f;
+}
+ul.notice li {
+  padding: 5px 0;
+}
+.vertical-form {
+  margin: 0 auto;
+}
+.vertical-form legend {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+.vertical-form input[type="text"],
+.vertical-form input[type="password"],
+.vertical-form input[type="number"] {
+  border: 1px #01c3ff solid;
+  color: #c1c1c1;
+  background: rgb(22, 99, 143);
+  background: linear-gradient(
+    40deg,
+    rgba(22, 99, 143, 1) 0%,
+    rgba(21, 68, 105, 1) 12%,
+    rgba(21, 54, 87, 1) 33%,
+    rgba(21, 44, 75, 1) 56%
+  );
+  opacity: 1;
+  filter: alpha(opacity=95);
+  height: 30px;
+  font-size: 14px;
+}
+.vertical-form input[type="text"],
+.vertical-form input[type="password"],
+.vertical-form input[type="submit"],
+.vertical-form input[type="number"] {
+  display: block;
+  margin: 0 auto 8px auto;
+  width: 200px;
+  text-align: left;
+  border-radius: 4px;
+  color: #ffffff;
+  outline: none;
+  font-family: inherit;
+}
+.vertical-form input[type="submit"] {
+  -webkit-appearance: none;
+  color: #fff;
+  background: #152c4b;
+  background-image: url(lock.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
+  filter: alpha(opacity=95);
+  position: relative;
+  left: 90px;
+  top: -75px;
+  border: 5px solid #03ace3;
+  border-radius: 30px;
+  text-align: center;
+  height: 60px;
+  width: 60px;
+  font-size: 11px;
+  font-weight: 400;
+  outline: 0;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+.vertical-form input:hover[type="submit"] {
+  background-color: #01c3ff;
+  background-image: url(lock.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.vertical-form .footer {
+  text-align: center;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.vertical-form .footer p:first-child {
+  color: #ffffff;
+}
+.vertical-form .footer a:first-child {
+  border-bottom: solid 1px #ccc;
+  text-decoration: none;
+}
+.vertical-form .footer p:nth-child(2) a {
+  border-bottom: solid 1px #000;
+}
+@media (max-width: 200px) {
+  .login {
+    padding: 0px 0 0 0;
+  }
+}
